@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@300&display=swap');
+body
+{ 
+	background: #0b0c10;
+	color: #66fcf1;
+	font-family: "Alatsi";
+	overflow-x: hidden;
+}
+
+iframe
+{
+	margin-left: 0 25%; 
+
+}
