@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+		<!---linking fontawesome JS----->
+		<script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"
+		></script>
+
+		<!----linking CSS file----->
+		<link rel="stylesheet" type="text/css" href="./css/styles.css">
+		<link rel="icon" type="image/png" href="./img/favicon.png"/>
+		<title>Sign In & Sign Up | BMSCE Blog</title>
+		
+	</head>
+	<body onload="myFunction()">
+		<div id="loader">
+        <div class="loading">
+      <div class="percent">100%</div>
+       <label class="text">Completed!</label>
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+    </div>
+    </div>
+    <div id="myDiv" style="display:none;" style="margin:0;">
+		<div class="container">
+			<div class="forms-container">
+				<div class="signin-signup">
+					<form class="sign-in-form" name="login" onsubmit="return validateSignIn();" action="aboutus.html" method="localhost:3000" method="post">
+						<img src="img/blog_logo.png" name="image" class="image" alt="logo-image">
+						<h2 class="title1">Sign In</h2>						
+						<div class="input-field1">
+							<i class="fas fa-envelope"></i>
+							<input spellcheck="false" autocomplete="off" autofocus="autofocus" type="email" name="email" placeholder="E-mail" title="Login with your BMSCE e-mail ID" required>
+						</div>
+						<div class="input-field1">
+							<i class="fas fa-lock"></i>
+							<input type="password" name="password" placeholder="Password" title="Must contain at least one number, one special character, one uppercase and lowercase letter, and at least 8 or more characters" required></div>
+						<input type="submit" value="Login" class="btn solid">
+						      					
+      					<div class="container1">
+      						<button type="button" class="cancelbtn" onclick="location.href = 'index.html';">Cancel</button>
+      						<span class="psw"><a href="#">Forgot password?</a></span>
+    					</div>					
+					</form>
+
+					<form class="sign-up-form" name="signup" onsubmit="return validateSignUp();" action="aboutus.html" method="localhost:3000" method="post">
+						<img src="img/blog_logo.png" class="logo" alt="logo-image">  
+						<h2 class="title2">Sign Up</h2>
+						<div class="input-field2">
+							<i class="fas fa-user"></i>
+							<input type="text" name="username" title="Must contain only alphabets" spellcheck="false" autocomplete="off" placeholder="Username" required>
+						</div>
+						<div class="input-field2">
+							<i class="fas fa-id-badge"></i>
+							<input type="text" spellcheck="false" name="usn" id="usn" title="Enter your College USN"autocomplete="off" placeholder="USN">
+						</div>						
+						<div class="input-field2">
+							<i class="fas fa-envelope"></i>
+							<input type="email" spellcheck="false" name="email" title="Sign-up with your BMSCE e-mail ID" autocomplete="off" placeholder="E-mail" required>
+						</div>
+						<div class="input-field2">
+							<i class="fas fa-lock"></i>
+							<input type="password" name="password" title="Must contain at least one number, one special character, one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Password" required>
+						</div>
+						<div class="input-field2">
+							<i class="fas fa-user-lock"></i>
+							<input type="password" name="confirm" title="Enter your password once more" placeholder="Confirm Password" required>
+						</div>
+						<div class="fieldgroup">
+							<label class="radio-inline">
+						      <input type="radio" name="optradio" id="student"checked>&emsp;Student
+						    </label></div>
+						    <div class="fieldgroup"><label class="radio-inline">
+						      <input type="radio" name="optradio" id="faculty">&emsp;Faculty
+						    </label></div>
+						    <div class="fieldgroup"><label class="radio-inline">
+						      <input type="radio" name="optradio">&emsp;Non-teaching Staff
+						    </label></div>
+						<input type="submit" value="Sign up" class="btn solid">
+					</form>
+				</div>
+			</div>
+
+			<div class="panels-container">
+				<div class="panel left-panel">
+					<div class="content">
+						<h3>Don't have an account?</h3>
+						<p>No problem! Create one by clicking on the button below.</p>
+						<button class="btn transparent" id="sign-up-btn">Sign Up</button>
+					</div>
+					<img src="img/login.svg" class="image" alt="login-image">
+				</div>
+
+				<div class="panel right-panel">
+					<div class="content">
+						<h3>Already have an account?</h3>
+						<p>Great! Just login by clicking the button below.</p>
+						<button class="btn transparent" id="sign-in-btn">Sign In</button>
+					</div>
+					<img src="img/signup.svg" class="image" alt="login-image">
+				</div>			
+			</div>
+		</div>
+	</div>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script>
+        var myVar;
+
+        function myFunction() {
+
+            function progress(){
+              var percent = document.querySelector('.percent');
+              var progress = document.querySelector('.progress');
+              var text = document.querySelector('.text');
+              var count = 4;
+              var per = 16;
+              var loading = setInterval(animate, 20);
+              function animate(){
+                if(count == 100 && per == 400){
+                  percent.classList.add("text-blink");
+                  text.style.display = "block";
+                  clearInterval(loading);
+                }else{
+                  per = per + 4;
+                  count = count + 1;
+                  progress.style.width = per + 'px';
+                  percent.textContent = count + '%';
+                }
+              }
+            }
+            progress();
+            myVar = setTimeout(showPage, 2700);
+        }
+
+        function showPage() {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
+	<!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+	<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+	<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	</body>
+</html>

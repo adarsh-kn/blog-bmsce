@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Alatsi' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"
+        ></script>
+        <link rel="icon" type="image/png" href="./img/favicon.png"/>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/home.css">
+
+        <title>Home | BMSCE Blog</title>
+    </head>
+    <body class="container">
+          <div class="row justify-content-center align-items-center">            
+              <img class="img-fluid" src="./img/logo_black1.png" alt="Logo">            
+          </div>
+          <div class="row content justify-content-center">
+            <div class="col-12 col-md-4 quote1">
+              <p><i class="fas fa-quote-left"></i><br>
+                “Blogging is a communications mechanism handed to us by the long tail of the Internet.”</p>
+                <p style="text-align: right; color: #66fcf1;">- Tom Foremski</p>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="container login">
+                <div class="col-md-8 col-lg-12 button justify-content-center">
+                  <a role="button" class="btn" href="login.html">
+                    SIGN IN / SIGN UP
+                  </a>
+                  <div class="mask"></div>
+                </div> 
+              </div>
+                           
+            </div>
+            <div class="col-12 col-md-4 quote2">
+              <p><i class="fas fa-quote-right" style="margin-left: 320px;"></i><br>
+                “I think of us as journalists; the medium we work in is blogging.”</p>
+                <p style="text-align: right; color: #66fcf1;">- Joshua Micah Marshall</p>
+            </div>
+          </div>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+          const btn = document.querySelectorAll('.button')[0];
+  
+          btn.addEventListener('mouseenter', () => {
+            body.classList.add('show');
+          });
+  
+          btn.addEventListener('mouseleave', () => {
+            body.classList.remove('show');
+          });
+        </script>
+    </body>
+</html>

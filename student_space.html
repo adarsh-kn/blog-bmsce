@@ -1,0 +1,259 @@
+<DOCTYPE! html>
+<html>
+<head>
+    <title>
+        Student Space | BMSCE Blog
+    </title>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+
+    <!-- Bootstrap CSS file is linked -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/student_space.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a class="top-link hide" href="" id="js-top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
+        <!-- <span class="screen-reader-text">Back to top</span> -->
+    </a>
+
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #0b0c10;">
+        <a class="navbar-brand" style="margin-left: 2rem;" href="index.html"><img width="120" height="60" src="./img/blog_logo.png"></img></a>
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" style="color: #fff;" onmouseover="this.style.color= '#66fcf1'" onmouseout="this.style.color='#ffffff'" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="color: #fff;" onmouseover="this.style.color= '#66fcf1'" onmouseout="this.style.color='#ffffff'" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Departments
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="cse.html">CSE</a>
+                <a class="dropdown-item" href="ise.html">ISE</a>
+                <a class="dropdown-item" href="ece.html">ECE</a>
+                <a class="dropdown-item" href="eee.html">EEE</a>
+                <a class="dropdown-item" href="eee.html">EEE</a>
+                <a class="dropdown-item" href="me.html">ME</a>
+                <a class="dropdown-item" href="ce.html">CE</a>
+                <a class="dropdown-item" href="iem.html">IEM</a>
+                <a class="dropdown-item" href="bt.html">BT</a>
+                <a class="dropdown-item" href="ete.html">ETE</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown"  id="active">
+              <a class="nav-link dropdown-toggle" style="color: #fff;" onmouseover="this.style.color= '#66fcf1'" onmouseout="this.style.color='#ffffff'" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Clubs
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="fac.html">Fine Arts</a>
+                  <a class="dropdown-item" href="rotaract.html">Rotaract</a>
+                  <a class="dropdown-item" href="da.html">Danzaddix</a>
+                  <a class="dropdown-item" href="pentagram.html">Pentagram</a>
+                  <a class="dropdown-item" href="protocol.html">Protocol</a>
+                  <a class="dropdown-item" href="inksanity.html">Inksanity</a>
+                  <a class="dropdown-item" href="quiz.html">Quiz Club</a>                
+                  <a class="dropdown-item" href="chirantana.html">Chirantana</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="color: #fff;" onmouseover="this.style.color= '#66fcf1'" onmouseout="this.style.color='#ffffff'" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Sports
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="cricket.html">Cricket</a>
+                  <a class="dropdown-item" href="football.html">Football</a>
+                  <a class="dropdown-item" href="basketball.html">Basketball</a>
+                  <a class="dropdown-item" href="badminton.html">Badminton</a>
+                  <a class="dropdown-item" href="kabaddi.html">Kabaddi</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: #66fcf1;" href="student_space.html">Student Space</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: #fff;" onmouseover="this.style.color= '#66fcf1'" onmouseout="this.style.color='#ffffff'" href="#contactus">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: #fff;" onmouseover="this.style.color= '#66fcf1'" onmouseout="this.style.color='#ffffff'" href="profile.html">Profile</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="typewriter container" style="margin-top: 6rem;">
+        <h1>The Student Space</h1>
+    </div>
+
+    <div class="container" style="margin-top: 3%;">
+      <div class="row align-items-center">
+        <div class="carddiv col-9 col-md-6 offset-md-1 ">
+            <article class="card">                              
+              <h2 class="card__title">
+                C O N T E N T S
+              </h2>
+              <p class="card_text">
+                <ul style="list-style: none; font-size: 1.25rem;">
+                    <li ><a class="conlinks" href="#turn-away"><i class="fa fa-hand-o-right"></i>&nbsp; &nbsp; Turn away from the world even for a moment</a></li>
+                    <li ><a class="conlinks" href="#best-song"><i class="fa fa-hand-o-right"></i>&nbsp; &nbsp; Best song ever?</a></li>
+                    <li ><a class="conlinks" href="#meet-university"><i class="fa fa-hand-o-right"></i>&nbsp; &nbsp; The Google Meet University</a></li>
+                    <li ><a class="conlinks" href="#photography-a-waste"><i class="fa fa-hand-o-right"></i>&nbsp; &nbsp; Is photography or art class really a waste of time?</a></li>
+                  </ul>
+              </p>
+            </article>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="content">
+        <div class="post" id="turn-away">
+        <h1>Turn away from the world even for a moment</h1>
+        <h4>Divya Antony</h4>
+        <h4>Nov 12, 2020</h4>
+        <hr>
+            <p>
+                Give your mind and brain a break from learning and assimilating and gathering information.
+
+                It really needs it! (Trust me on this one, it really, really needs a break).
+
+                Instead be still, have some tea, take a long walk in nature and breathe in Life, look at the sunrise and sunset, and in between; Just Be.
+                No Internet, no social media, no nothing – Nothing but your very own self, alone and in solitude.
+            </p>
+            <p>
+                Tomorrow is a new, fresh day and between your present moment, evening and morning a lot of things will happen in your consciousness as a result of having given yourself to the stillness even for a day.
+
+                Once you give yourself a break things has a chance to fall into place naturally and Life can finally get a breather when you stop forcing your way to understanding.
+            </p>
+            <p>
+                True, deep understanding comes from yielding to the stillness within you, not from books, MP3’s and lectures.
+
+                Do this and things will be much clearer for you tomorrow, I promise.
+
+                The feeling of relief is the sign for you that tells you that this is what your mind and brain needs, so listen to it.
+            </p>
+        </div>
+        <div class="post" id="best-song">
+            <h1>Best song ever?</h1>
+            <h4>Roshni Suresh</h4>
+            <h4>Nov 4, 2020</h4>
+            <hr>
+            <p>So what kind of music do you listen to?”
+I freeze in terror. Quickly, I run through my options, suppressing my instinct to blurt out reputation-destroying words like “One Direction” and “Top 40 Pop Hits.” I consider my interrogator, who just told me, “I really liked Hozier, but he’s so mainstream now.”
+            </p>
+            <p>
+“Alternative,” I decide. That’s a safe answer, right?
+            </p>
+            <p>
+I unashamedly went through my One Direction phase in high school: The posters and magazines in my room back home and my iTunes library bear witness to this. (On a side note, raise your hand if you were heartbroken when Zayn left the band.)
+
+But I know the stigma associated with liking One Direction, so if anyone ever asks about my favorite musical artist, I generally say something like Taylor Swift — still mainstream, but acceptable. If I’m really trying to impress someone, I say that I like alternative rock, like The 1975 or Kodaline, which, admittedly, are still quite mainstream bands.
+            </p>
+            <p>
+But why are we so obsessed with liking music that isn’t “mainstream”? If a song is on the Top 40s Charts, isn’t that an indicator that it’s good enough to be liked by many people? Hozier is still Hozier, even if more people like his music and are aware of it. Whether or not music is mainstream doesn’t affect its quality or its content, and interestingly, music seems to be the only commodity that decreases in value when more people know about it. (The lines at Sushirrito and the sustaining power of name brands prove that popularity can boost “coolness” too.)
+
+            </p>
+        </div>
+        <div class="post" id="meet-university">
+            <h1>The Google Meet University</h1>
+            <h4>Ganesh Arun</h4>
+            <h4>Nov 1, 2020</h4>
+            <hr>
+            <p>
+                We’ve all heard it, The Google Meet University sucks. It’s hard to focus, conversation is less fluid, lectures are less stimulating. In many ways, especially as someone who has ADHD, I agree with all of these sentiments. Unfortunately, ADHD is not my only disability. It is one among the rest, both physical and neurological. My disabilities are simply a fact of life that I have to manage, and that management is much easier at Google Meet University.
+            </p>
+            <p>
+Pre-COVID, there were many facets of university life that my classmates enjoyed but were inaccessible to me. Take, for example, language classes. When I came to Stanford, I’d tested out of the requirement, so I didn’t have to take any languages, but I really wanted to learn as many as possible. It was important to me.
+            </p>
+            <p>
+Imagine my surprise when taking Spanish 1A turned out to be an absolute disaster. The class met every single day at 8:30 a.m. Due to my disabilities, executing this kind of attendance was simply not possible for me. My chronic pain plays a large role in my daily ability, and this class was very far away from EBF, where I lived. I have OAE accommodations to remedy this, of course, but the Spanish Language department was unwilling to accommodate me, citing the necessity of perfect attendance to their course goals. They insisted, to me and my disability advisor, that every single minute of the 2,500 minutes of Spanish class in one quarter was absolutely essential. I couldn’t even be late, let alone absent.
+            </p>
+            <p>
+So when my chronic pain made my journey to class slower, I was penalized, heavily, every time, even if I was only one minute late. These tardies compounded into “absences,” so when my illnesses made me actually absent, my grade was reduced even further. I appealed this, but my disability advisor told me there was nothing I could do, except file an official grievance, which probably wouldn’t even be settled until the quarter was over. Did I get those points back when my instructor was late? Or when class ended early? Of course not. Because these attendance-minutes weren’t necessary for the success of the course goals, but, rather, their “significance” was just thinly veiled ableism.
+            </p>
+        </div>
+        <div class="post" id="photography-a-waste">
+            <h1>Is photography or art class really a waste of time?</h1>
+            <h4>Anurag Mohit</h4>
+            <h4>Oct 12, 2020</h4>
+            <hr>
+            <p>
+                Every time when my mum and I start a conversation about the elective classes that someone else is taking, she would ALWAYS say that their class is better and that the class I chose is just a waste of time.
+            </p>
+            <p>
+Today we started to talk about my science classmate being in the video production class, and that she could help with the video editing for our science project (we are in the same group). My mum then started to say that "You should've chosen that class instead". Like WTF it's like almost midterm exam time, what am I supposed to do, cancel my photography class, or design tech class now? And she then said that photography class is just a waste of time and that I didn't really learn anything from that class.
+            </p>
+            <p>
+Even our teachers said that the electives are supposed to be chosen out of our own interest and talent, which some of my classmates are good at art, some good in acting, some good at technology, etc. I know that my mum always says that electives are supposed to help you with your studies. Well, DUH, it helps me relax!!!!! I know that I am not that "artist" type people but I really enjoyed doing art and painting on my project, which I would feel like time passed so fast. and isn't this what the class is supposed to do, like learn new things while enjoying it??!!
+            </p>
+            <p>
+And every time when I chose somethings, my mum would just say bad things about it, like last year, I was in art, she kept telling me to change because it's a waste of time. Then this year, I chose photography, and she said that I couldn't learn anything from it. This is what really drives me angry, and there were times when we started arguments because of this topic. She kept telling me to choose business or programming, which I know that there are people who are interested in it. Maybe someone chose it to learn more, IDK. but I am really NOT interested in Business. And because my friends told me that photography class will learn about Adobe software like Photoshop and Indesign, so I chose the photography class. I even told my mum before signing up for that class, and I told her we were going to learn skills in photoshop and stuff. She APPROVED. And right now she changed her mind again and started to rant about it again.
+            </p>
+        </div>
+
+        <div class="features">
+            <p>Search for a blog :</p>
+            <input type="text" id="searchPost" onKeyUp=search() palceholder="Post name?" title="Post name?"></input>
+        </div>
+        <h1 class="no-post">
+            <span class="letters letters-1">No</span></br>
+            <span class="letters letters-2">such</span></br>
+            <span class="letters letters-3">post</span></br>
+            <span class="letters letters-4">found!</span></br>
+            </span>
+        </h1>
+    </div>
+
+    <footer id="contactus" class="container" style="margin-top: 2%;">
+        <div class="row footer-row">
+          <div class="col-12 col-md-4 order-10 order-md-1 left justify-content-center">
+      <h2 class="fheading">Email us your blogs at :</h2>
+            <ul class="gmails">
+                <li> <a href="mailto:bmsceblog@gmail.com"> <i class="fa fa-envelope" aria-hidden="true" style="padding: 0 0 10px 10px;"></i>&nbsp; bmsceblog@gmail.com</a></li>
+                <li><a href="mailto:adarshkn.cs19@bmsce.ac.in"> <i class="fa fa-envelope" aria-hidden="true" style="padding: 0 0 10px 10px;"></i>&nbsp; adarshkn.cs19@bmsce.ac.in</a></li>
+                <li><a href="mailto:anvitha.cs19@bmsce.ac.in"> <i class="fa fa-envelope" aria-hidden="true" style="padding: 0 0 10px 10px;"></i>&nbsp; anvitha.cs19@bmsce.ac.in</a></li>
+                <li><a href="mailto:abhinandan.cs19@bmsce.ac.in@gmail.com"> <i class="fa fa-envelope" aria-hidden="true" style="padding: 0 0 10px 10px;"></i>&nbsp; abhinandan.cs19@bmsce.ac.in</a></li>        
+            </ul>
+            <h4 class="feedback">Leave us your feedback <a href="feedback.html" target="_blank">here</a></h4>
+    </div>
+    <div class="col-12 col-md-4 order-12 order-md-2 middle">
+      <div class="copyrights">
+        <p style="margin-top: 20px; font-size: 0.82rem; font-family: 'Alatsi'; color: #0b0c10; text-align: center;">Copyright &copy; 2021 | All rights reserved to the developers</p>
+    </div>
+    </div>
+    <div class="col-12 col-md-4 order-11 order-md-3">
+      <h2 class="fheading">Connect with us also at :</h2>
+            <div class="icons-container">
+            <div class="social-icons spinned align-items-center justify-content-center">
+                <ul class="gmails">
+                   <li> 
+                <a class="item1 facebook" href="https://www.facebook.com/BMS-College-of-Engineering-52818113981/" target="_blank"><em class="fa fa-facebook"></em></a>
+                <a class="item1 twitter" href="https://twitter.com/hashtag/bmsce" target="_blank"><em class="fa fa-twitter"></em></a>
+                <a class="item1 google" href="https://www.bmsce.ac.in/" target="_blank"><em class="fa fa-google"></em></a>
+            </li>
+                <li>
+                    <a class="item1 linkedin" href="https://www.linkedin.com/school/b.-m.-s.-college-of-engineering/?originalSubdomain=in" target="_blank"><em class="fa fa-linkedin"></em></a>
+                <a class="item1 instagram" href="https://www.instagram.com/explore/tags/bmsce/?hl=en" target="_blank"><em class="fa fa-instagram"></em></a>
+            </li>
+        </ul>
+            </div>
+        </div>
+    </div>
+        </div>
+    </footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/studentSpace.js"></script>
+</body>
+</html>

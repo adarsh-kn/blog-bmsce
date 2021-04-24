@@ -1,0 +1,195 @@
+<DOCTYPE! html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>
+        About Us | BMSCE Blog
+    </title>
+    <link rel="icon" type="image/png" href="./img/favicon.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Alatsi' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+
+    <!-- Bootstrap CSS file is linked -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/about.css">    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@300&display=swap" rel="stylesheet"> 
+</head>
+<body onload="myFunction()">
+    <div id="loader">
+        <div class="loading">
+      <div class="percent">100%</div>
+       <label class="text">Completed!</label>
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+    </div>
+    </div>
+    <div id="myDiv" style="display:none;" style="margin:0;">
+        <a class="top-link hide" href="" id="js-top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
+        <!-- <span class="screen-reader-text">Back to top</span> -->
+    </a>
+    
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #0b0c10;">
+      <a class="navbar-brand" style="margin-left: 2rem;" href="index.html"><img width="120" height="60" src="./img/blog_logo.png"></img></a>
+      <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse justify-content-center align-items-center" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item" id="active" >
+            <a class="nav-link" style="color: #66fcf1;" href="aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style="color: #fff;" onmouseover="this.style.color= '#66fcf1'" onmouseout="this.style.color='#ffffff'" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Departments
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="cse.html">CSE</a>
+              <a class="dropdown-item" href="ise.html">ISE</a>
+              <a class="dropdown-item" href="ece.html">ECE</a>
+              <a class="dropdown-item" href="eee.html">EEE</a>
+              <a class="dropdown-item" href="eee.html">EEE</a>
+              <a class="dropdown-item" href="me.html">ME</a>
+              <a class="dropdown-item" href="ce.html">CE</a>
+              <a class="dropdown-item" href="iem.html">IEM</a>
+              <a class="dropdown-item" href="bt.html">BT</a>
+              <a class="dropdown-item" href="ete.html">ETE</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style="color: #fff;" onmouseover="this.style.color= '#66fcf1'" onmouseout="this.style.color='#ffffff'" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Clubs
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="fac.html">Fine Arts</a>
+                <a class="dropdown-item" href="rotaract.html">Rotaract</a>
+                <a class="dropdown-item" href="da.html">Danzaddix</a>
+                <a class="dropdown-item" href="pentagram.html">Pentagram</a>
+                <a class="dropdown-item" href="protocol.html">Protocol</a>
+                <a class="dropdown-item" href="inksanity.html">Inksanity</a>
+                <a class="dropdown-item" href="quiz.html">Quiz Club</a>                
+                <a class="dropdown-item" href="chirantana.html">Chirantana</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style="color: #fff;" onmouseover="this.style.color= '#66fcf1'" onmouseout="this.style.color='#ffffff'" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Sports
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="cricket.html">Cricket</a>
+                <a class="dropdown-item" href="football.html">Football</a>
+                <a class="dropdown-item" href="basketball.html">Basketball</a>
+                <a class="dropdown-item" href="badminton.html">Badminton</a>
+                <a class="dropdown-item" href="kabaddi.html">Kabaddi</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"style="color: #fff;" onmouseover="this.style.color= '#66fcf1'" onmouseout="this.style.color='#ffffff'" href="student_space.html">Student Space</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"style="color: #fff;" onmouseover="this.style.color= '#66fcf1'" onmouseout="this.style.color='#ffffff'" href="#contactus">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"style="color: #fff;" onmouseover="this.style.color= '#66fcf1'" onmouseout="this.style.color='#ffffff'" href="profile.html">Profile</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container" style="margin-top: 5.5rem;">        
+        <div class="row align-items-center">
+            <div class="col-12 col-sm-12 col-md-6 align-self-center">
+              <img class="img-fluid" src="./img/aboutus1.svg" class="img2">
+            </div>
+            <div class="col-12 col-sm-12 col-md-6">
+              <h1 class="sign">
+                <span class="fast-flicker">W</span>elcom<span class="flicker">e</span>...
+            </h1>
+            <p>
+                Ever had the urge to write about your college life? To give your thoughts and experiences the wings of 
+                flight to soar and meet the  world? If so, we built the perfect home for such urges - a college blog, 
+                where you can share and educate yourself with the opinions and experiences of your peers. This is one place 
+                for all adventures, talks, experiences and ideas. Here by, we provide you, the students and faculty of 
+                B.M.S College of Engineering a modern looking platform to share their perspectives, opinions, ideas, 
+                adventures and all the other stuff that life has had in store for you. We encourage all the students and 
+                faculty to come be a part of this beautiful platform and build a vivid and varied community online.
+            </p>
+            </div>
+        </div>
+
+        <div class="row align-items-center" style="margin-top: 5%; margin-bottom: 5%;">          
+          <div class="col-12 col-sm-12 col-md-6 align-items-center order-last order-md-first">
+            <h1 class="sign" >
+              <span class="fast-flicker">A</span>bout<span class="flicker">&nbsp; U</span>s
+          </h1>
+          <p>
+              This Blog is for the students, faculty and staff of the B.M.S College of Engineering. It has been developed and designed by 
+              <ul>
+                  <li>ADARSH K N</li>
+                  <li>ABHINANDAN UDUPA</li>
+                  <li>ANVITHA ARAVINDA</li>
+              </ul>
+          </p>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 justify-content-center">
+            <img class="img-fluid" src="./img/about.svg" class="img2">
+          </div>
+      </div>
+    </div>
+
+	    <footer id="contactus" class="container">
+			<div class="row footer-row">
+			  <div class="col-12 col-md-4 order-10 order-md-1 left justify-content-center">
+          <h2 class="fheading">Email us your blogs at :</h2>
+			    <ul class="gmails">
+			        <li> <a href="mailto:bmsceblog@gmail.com"> <i class="fa fa-envelope" aria-hidden="true" style="padding: 0 0 10px 10px;"></i>&nbsp; bmsceblog@gmail.com</a></li>
+			        <li><a href="mailto:adarshkn.cs19@bmsce.ac.in"> <i class="fa fa-envelope" aria-hidden="true" style="padding: 0 0 10px 10px;"></i>&nbsp; adarshkn.cs19@bmsce.ac.in</a></li>
+			        <li><a href="mailto:anvitha.cs19@bmsce.ac.in"> <i class="fa fa-envelope" aria-hidden="true" style="padding: 0 0 10px 10px;"></i>&nbsp; anvitha.cs19@bmsce.ac.in</a></li>
+			        <li><a href="mailto:abhinandan.cs19@bmsce.ac.in@gmail.com"> <i class="fa fa-envelope" aria-hidden="true" style="padding: 0 0 10px 10px;"></i>&nbsp; abhinandan.cs19@bmsce.ac.in</a></li>        
+			    </ul>
+                <h4 class="feedback">Leave us your feedback <a href="feedback.html" target="_blank">here</a></h4>
+        </div>
+        <div class="col-12 col-md-4 order-12 order-md-2 middle">
+          <div class="copyrights">
+            <p style="font-size: 0.82rem; font-family: 'Alatsi'; color: #0b0c10; text-align: center;">Copyright &copy; 2021 | All rights reserved to the developers</p>
+        </div>
+        </div>
+        <div class="col-12 col-md-4 order-11 order-md-3">
+          <h2 class="fheading">Connect with us also at :</h2>
+			    <div class="icons-container">
+			    <div class="social-icons spinned align-items-center justify-content-center">
+			        <ul class="gmails">
+			           <li> 
+			        <a class="item1 facebook" href="https://www.facebook.com/BMS-College-of-Engineering-52818113981/" target="_blank"><em class="fa fa-facebook"></em></a>
+			        <a class="item1 twitter" href="https://twitter.com/hashtag/bmsce" target="_blank"><em class="fa fa-twitter"></em></a>
+			        <a class="item1 google" href="https://www.bmsce.ac.in/" target="_blank"><em class="fa fa-google"></em></a>
+			    </li>
+			        <li>
+			            <a class="item1 linkedin" href="https://www.linkedin.com/school/b.-m.-s.-college-of-engineering/?originalSubdomain=in" target="_blank"><em class="fa fa-linkedin"></em></a>
+			        <a class="item1 instagram" href="https://www.instagram.com/explore/tags/bmsce/?hl=en" target="_blank"><em class="fa fa-instagram"></em></a>
+			    </li>
+			</ul>
+			    </div>
+			</div>
+        </div>
+			</div>
+		</footer>
+    </div>
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="./js/about.js"></script>
+</body>
+</html>
